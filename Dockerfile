@@ -6,7 +6,7 @@ MAINTAINER Enric Tejedor Saavedra <enric.tejedor.saavedra@cern.ch>
 USER root
 
 # Install ROOT prerequisites
-RUN apt-get update
+RUN apt-get clean && apt-get update
 RUN apt-get install -y \
     libx11-6 \
     libxext6 \
